@@ -1,5 +1,22 @@
 # TesteCelk
 
+
+# Desenvolvi a ferramenta com base no Angular, Bootstrap e Material no frontend e utilizei uma fake api para backend (https://github.com/typicode/json-server#cli-usage)
+
+# Quando baixar a aplicação sera necessario dar os seguintes comandos no terminal:
+
+# npm i
+
+# ng serve --open
+
+# npm install -g json-server
+
+# json-server --watch db.json
+
+# Com isto a aplicação esta pronta para rodar e receber todas as funções programadas.
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
 
 ## Development server
