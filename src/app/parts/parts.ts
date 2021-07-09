@@ -3,5 +3,5 @@ export interface Part {
     name: string;
     vehicle: string;
     liquid: number;
-    gross: number
+    gross: number;
 }

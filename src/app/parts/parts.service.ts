@@ -7,24 +7,27 @@ import{ Part } from "./parts"
 })
 
 export class PartService {
-    retrieveAll(): Part[]{
-        return PARTS
+    PARTS: Part[] = [
+        {
+            id: 1,
+            name: 'polia',
+            vehicle: 'Ford Focus',
+            liquid: 1.22,
+            gross: 1.72,
+        },
+        {
+            id: 2,
+            name: 'impulsor',
+            vehicle: 'Ford Focus',
+            liquid: 2.25,
+            gross: 2.73,
+        },
+    ]
+    addProduct(part: Part){
+        this.PARTS.push(part)
+        return this.PARTS
     }
-};
-
-var PARTS: Part[] = [
-    {
-        id: 1,
-        name: 'polia',
-        vehicle: 'Ford Focus',
-        liquid: 1.200,
-        gross: 1.700,
-    },
-    {
-        id: 2,
-        name: 'impulsor',
-        vehicle: 'Ford Focus',
-        liquid: 2.200,
-        gross: 2.700,
-    },
-]
+    retrieveAll(): Part[]{
+        return this.PARTS
+    }
+}
